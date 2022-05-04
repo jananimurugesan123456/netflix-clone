@@ -50,6 +50,7 @@
   height: 250px;
   width: 200px;
   border-radius: 10px;
+  background-color: #61dafb;
 } 
 .first{
   display: flex;
@@ -62,4 +63,10 @@
 }
 .common{
   width: 300px;
+}
+.details{
+  background-color: aquamarine;
+  border-radius: 10px;
+  width: 200px;
+  height: 200px;
 }

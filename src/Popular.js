@@ -2,15 +2,14 @@ import api, { api_key } from "./axios";
 import { useEffect, useState } from "react";
 import MovieList from "./MovieList";
 
-const Upcoming = () => {
+const Popular = () => {
   const [data, setData] = useState([]);
-
-  const apiUpcoming = api.request("movie/upcoming", { params: { api_key } });
+  const apiPopular = api.request("movie/popular", { params: { api_key } });
 
   useEffect(() => {
     const data = async () => {
-      const response = await apiUpcoming;
-      setData(response.data.results);
+      const responsepo = await apiPopular;
+      setData(responsepo.data.results);
     };
     data();
   }, []);
@@ -19,4 +18,4 @@ const Upcoming = () => {
   return <MovieList data={data} />;
 };
 
-export default Upcoming;
+export default Popular;
