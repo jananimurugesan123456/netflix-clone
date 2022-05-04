@@ -70,8 +70,8 @@
 .details{
   background-color: aquamarine;
   border-radius: 10px;
-  width: 200px;
-  height: 200px;
+  margin: 20px;
+  height: 110px;
 }
 .first{
   background-color: springgreen;
