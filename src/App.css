@@ -72,6 +72,7 @@
   border-radius: 10px;
   margin: 20px;
   height: 110px;
+  font-style: italic;
 }
 .first{
   background-color: springgreen;
@@ -82,4 +83,12 @@
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+}
+.id{
+  font-weight: bold;
+  color:blue;
+}
+.average{
+  font-weight: bold;
+  color: blue;
 }

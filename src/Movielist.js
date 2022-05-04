@@ -14,9 +14,9 @@ function MovieList({ data }) {
                 />
               </div>
               <div class="details">
-                <div>movieid: {data.id} </div>
+                <div class="id">movieid: {data.id} </div>
                 <div class="movie">moviename:{data.title}</div>
-                <div>rating:{data.vote_average}</div>
+                <div class="average">rating:{data.vote_average}</div>
               </div>
             </div>
           </div>
