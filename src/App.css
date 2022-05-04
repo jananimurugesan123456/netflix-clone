@@ -63,10 +63,23 @@
 }
 .common{
   width: 300px;
+  background-color: darkgoldenrod;
+  border-radius: 40px;
+  margin: 30px;
 }
 .details{
   background-color: aquamarine;
   border-radius: 10px;
   width: 200px;
   height: 200px;
+}
+.first{
+  background-color: springgreen;
+}
+.top{
+  background-color: darkgoldenrod;
+  height: 50px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
 }

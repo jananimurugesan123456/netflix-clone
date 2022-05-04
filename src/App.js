@@ -10,7 +10,7 @@ function App() {
     <div className="App">
       <nav>
         <BrowserRouter>
-          <nav>
+          <nav class="top">
             <a href="/movies/upcoming">upcoming</a>
             <a href="/movies/popular">popular</a>
             <a href="/movies/toprated">toprate</a>
