@@ -4,6 +4,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Upcoming from "./Upcoming";
 import Toprate from "./Toprate";
 import Nowplaying from "./Nowplaying";
+import Moviedetails from "./Moviedetails";
 
 function App() {
   return (
@@ -16,11 +17,24 @@ function App() {
             <a href="/movies/toprated">toprate</a>
             <a href="/movie/nowplaying">nowplaying</a>
           </nav>
+
+          <select class="topchanges">
+            <option class value="upcoming">
+              upcoming
+            </option>
+            <option>popular</option>
+          </select>
+
           <Routes>
-            <Route path="/movies/upcoming" element={<Upcoming />}></Route>
-            <Route path="/movies/popular" element={<Popular />}></Route>
-            <Route path="/movies/toprated" element={<Toprate />}></Route>
-            <Route path="/movie/nowplaying" element={<Nowplaying />}></Route>
+            <Route path="/movies/upcoming" exact element={<Upcoming />}></Route>
+            <Route path="/movies/popular" exact element={<Popular />}></Route>
+            <Route path="/movies/toprated" exact element={<Toprate />}></Route>
+            <Route
+              path="/movie/nowplaying"
+              exact
+              element={<Nowplaying />}
+            ></Route>
+            <Route path="/movies/:movieid" element={<Moviedetails />}></Route>
           </Routes>
         </BrowserRouter>
       </nav>

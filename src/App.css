@@ -50,7 +50,7 @@
   height: 250px;
   width: 200px;
   border-radius: 10px;
-  background-color: #61dafb;
+  background-color:aquamarine;
 } 
 .first{
   display: flex;
@@ -63,7 +63,7 @@
 }
 .common{
   width: 300px;
-  background-color: darkgoldenrod;
+  background-color: aliceblue;
   border-radius: 40px;
   margin: 30px;
 }
@@ -75,10 +75,10 @@
   font-style: italic;
 }
 .first{
-  background-color: springgreen;
+  background-color:darkgrey;
 }
 .top{
-  background-color: darkgoldenrod;
+  background-color:coral;
   height: 50px;
   display: flex;
   justify-content: space-evenly;
@@ -91,4 +91,86 @@
 .average{
   font-weight: bold;
   color: blue;
+}
+
+
+.overalldesign{
+  display: flex;
+  margin-top: 40px;
+  background-color:chartreuse;
+  height: 85vh;
+  
+}
+.frontimage{
+  background-color: blueviolet;
+  border-radius: 30px;
+  padding: 20px 20px 20px 20px;
+  height: 290px;
+  margin-top: 200px;
+}
+.textdetails{
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  font-style: italic;
+}
+.title{
+  font-size: 50px;
+  font-weight: bold;
+}
+.budget{
+  margin-top: 10px;
+}
+.overview{
+  margin-top: 10px;
+  font-size: large;
+  font-weight: 200px;
+  align-items: flex-start;
+}
+.popularity{
+  margin-top: 10px;
+}
+.originallanguage{
+  margin-top: 10px;
+}
+.insideoverview{
+  margin-top: 10px;
+}
+
+.favourite img{
+  height: 36px;
+  width: 36px;
+}
+.star img{
+  height: 36px;
+  width: 36px;
+
+}
+/* .sticker img{
+  display: flex;
+} */
+.img:hover{
+  background-color: #61dafb;
+}
+.popularityname{
+  font-size: large;
+  font-weight: bold;
+}
+.originallanguagename{
+  font-size: large;
+  font-weight: bold;
+}
+
+.last{
+  display: flex;
+  gap: 700px;
+  padding: 0px 0px 0px 20px;
+}
+.favourite{
+  display: flex;
+}
+
+.background body{
+  position: absolute;
+  bottom: 10px;
 }
