@@ -62,9 +62,9 @@
   font-weight: bold;
 }
 .common{
-  width: 300px;
+  width: 280px;
   background-color: aliceblue;
-  border-radius: 40px;
+  border-radius: 20px;
   margin: 30px;
 }
 .details{
@@ -78,7 +78,7 @@
   background-color:darkgrey;
 }
 .top{
-  background-color:coral;
+  background-color:burlywood;
   height: 50px;
   display: flex;
   justify-content: space-evenly;
@@ -97,35 +97,49 @@
 .overalldesign{
   display: flex;
   margin-top: 40px;
-  background-color:chartreuse;
+  background-color:lavender;
   height: 85vh;
   
 }
+.background{
+  display: flex;
+}
 .frontimage{
-  background-color: blueviolet;
+  background-color:white;
   border-radius: 30px;
   padding: 20px 20px 20px 20px;
   height: 290px;
-  margin-top: 200px;
+  margin-top: 160px;
 }
 .textdetails{
+  margin-top: 130px;
   display: flex;
   align-items: center;
   font-weight: bold;
   font-style: italic;
+  color:floralwhite;
 }
 .title{
   font-size: 50px;
   font-weight: bold;
+  display: flex;
+  align-items: flex-start;
+  padding: 0px 0px 0px 40px;
 }
 .budget{
   margin-top: 10px;
+  display: flex;
+  align-items: flex-start;
+  padding: 0px 0px 0px 40px;
 }
 .overview{
   margin-top: 10px;
   font-size: large;
   font-weight: 200px;
+  display: flex;
   align-items: flex-start;
+  padding: 0px 0px 0px 40px;
+  font-style: italic;
 }
 .popularity{
   margin-top: 10px;
@@ -135,6 +149,7 @@
 }
 .insideoverview{
   margin-top: 10px;
+  padding:0px 0px 0px 40px;
 }
 
 .favourite img{
@@ -155,15 +170,17 @@
 .popularityname{
   font-size: large;
   font-weight: bold;
+  padding: 10px 0px 0px 20px;
 }
 .originallanguagename{
   font-size: large;
   font-weight: bold;
+
 }
 
 .last{
   display: flex;
-  gap: 700px;
+  gap: 620px;
   padding: 0px 0px 0px 20px;
 }
 .favourite{
@@ -173,4 +190,40 @@
 .background body{
   position: absolute;
   bottom: 10px;
+}
+.insideoverview{
+  padding:0px 0px 0px 30px ;
+}
+.genres{
+  display: flex;
+  padding:0px 0px 0px 40px ;
+  gap: 20px;
+}
+.overalldesign{
+  background-image: url("");
+}
+.postername{
+  font-size: large;
+  font-weight: bold;
+  display: flex;
+  align-items: flex-start;
+}
+.posters{
+  display: flex;
+  gap: 200px;
+  margin-top: 30px;
+  padding:0px 0px 0px 40px ;
+}
+.backdropname{
+  font-size: large;
+  font-weight: bold;
+}
+.aboutmovie{
+  height: 100vh;
+}
+.frontimage{
+  width: 500px;
+}
+.imgtext{
+  display: flex; 
 }

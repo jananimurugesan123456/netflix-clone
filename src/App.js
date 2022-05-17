@@ -17,13 +17,13 @@ function App() {
             <a href="/movies/toprated">toprate</a>
             <a href="/movie/nowplaying">nowplaying</a>
           </nav>
-
+          {/* 
           <select class="topchanges">
             <option class value="upcoming">
               upcoming
             </option>
             <option>popular</option>
-          </select>
+          </select> */}
 
           <Routes>
             <Route path="/movies/upcoming" exact element={<Upcoming />}></Route>
