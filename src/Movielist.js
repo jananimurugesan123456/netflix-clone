@@ -17,7 +17,7 @@ function MovieList({ data }) {
                 </div>
                 <div class="details">
                   {/* <a class="hover">movieid:{data.id}</a> */}
-                  <div class="id">{data.id} </div>
+                  {/* <div class="id">{data.id} </div> */}
                   <div class="movie">{data.title}</div>
                   <div class="average">{data.vote_average}</div>
                 </div>

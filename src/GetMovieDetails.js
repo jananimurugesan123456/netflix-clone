@@ -1,15 +1,17 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
+import Credits from "./Credits";
+import Similar from "./Similar";
 const GetMovieDetails = ({ moviedata }) => {
+  const { movieid } = useParams();
   return (
     <>
       <div class="overalldesign">
         <div
           className="aboutMovie"
           style={{
-            backgroundImage:
-              "url(" +
-              `https://image.tmdb.org/t/p/original/${moviedata.backdrop_path}`,
+            background: `url(https://image.tmdb.org/t/p/original/${moviedata.backdrop_path}),rgba(0,0,0,0.7)`,
+            backgroundBlendMode: "multiply",
           }}
         >
           {/* <div class="background">
@@ -19,7 +21,7 @@ const GetMovieDetails = ({ moviedata }) => {
           <div class="imgtext">
             <div class="frontimage">
               <img
-                src={`https://image.tmdb.org/t/p/w500/${moviedata.backdrop_path}`}
+                src={`https://image.tmdb.org/t/p/w300/${moviedata.poster_path}`}
                 alt=""
               />
             </div>
@@ -47,7 +49,13 @@ const GetMovieDetails = ({ moviedata }) => {
                   <div class="overview">Overview</div>
                   <div class="insideoverview">{moviedata.overview}</div>
                 </div>
-                <div class="posters">
+                <div class="name">
+                  <div>
+                    {" "}
+                    <Credits />
+                  </div>
+                </div>
+                {/* <div class="posters">
                   <div class="posterpath">
                     <div class="postername">Posterpath</div>
                     <div class="posterinside">
@@ -60,7 +68,7 @@ const GetMovieDetails = ({ moviedata }) => {
                       backdroppath:{moviedata.backdrop_path}
                     </div>
                   </div>
-                </div>
+                </div> */}
                 <div class="last">
                   <div class="popularity">
                     <div class="popularityname">Popularity</div>
@@ -73,6 +81,9 @@ const GetMovieDetails = ({ moviedata }) => {
                       {moviedata.original_language}
                     </div>
                   </div>
+                </div>
+                <div>
+                  <Similar />
                 </div>
               </div>
             </div>

@@ -5,6 +5,7 @@ import Upcoming from "./Upcoming";
 import Toprate from "./Toprate";
 import Nowplaying from "./Nowplaying";
 import Moviedetails from "./Moviedetails";
+import Credits from "./Credits";
 
 function App() {
   return (
@@ -35,6 +36,7 @@ function App() {
               element={<Nowplaying />}
             ></Route>
             <Route path="/movies/:movieid" element={<Moviedetails />}></Route>
+            {/* <Route path="/movie/:name" element={<Credits />}></Route> */}
           </Routes>
         </BrowserRouter>
       </nav>
