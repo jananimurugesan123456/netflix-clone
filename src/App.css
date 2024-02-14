@@ -41,41 +41,47 @@
   flex-direction:row;
   flex-wrap: wrap;
   
+  
 }
 .image{
   gap: 100px 100px;
+  padding: 5px 0px 0px 0px;
 }
 .image img{
-  padding: 20px 20px 20px 20px;
+  padding: 8px 8px 8px 8px;
   height: 250px;
   width: 200px;
   border-radius: 10px;
-  background-color:aquamarine;
+  background-color:black;
 } 
 .first{
   display: flex;
   flex-wrap: wrap;
 }
 .movie{
+  margin-top: 20px; 
   gap: 50px 50px;
   font-size: large;
   font-weight: bold;
+  color: whitesmoke;
 }
 .common{
   width: 280px;
-  background-color: aliceblue;
+  background-color: white;
+  border: 2px solid black;
   border-radius: 20px;
   margin: 30px;
 }
 .details{
-  background-color: aquamarine;
-  border-radius: 10px;
+  background-color: black;
+  border-radius: 40px;
   margin: 20px;
   height: 110px;
   font-style: italic;
+  padding: 30px 0px 0px 0px;
 }
 .first{
-  background-color:darkgrey;
+  background-color:whitesmoke;
 }
 .top{
   background-color:lightgreen;
@@ -86,11 +92,11 @@
 }
 .id{
   font-weight: bold;
-  color:blue;
+  color:whitesmoke;
 }
 .average{
   font-weight: bold;
-  color: blue;
+  color: whitesmoke;
 }
 
 
@@ -114,7 +120,6 @@
 }
 .frontimage img{
   border-radius: 7px;
-  
   border: solid 3px white;
 }
 .textdetails{
@@ -256,3 +261,9 @@
 .profile{
   padding: 20px 0px 0px 20px ;
 }
+.topimage{
+  height: 50px;
+  width: 10px;
+}
+
+

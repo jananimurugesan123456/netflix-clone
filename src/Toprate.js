@@ -17,4 +17,4 @@ const Toprate = () => {
   return <MovieList data={data} />;
 };
 
-export default Toprate; 
+export default Toprate;
