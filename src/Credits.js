@@ -6,7 +6,6 @@ import Getcredits from "./Getcredits";
 const Credits = () => {
   const { movieid } = useParams();
   const [data, setData] = useState([]);
-
   useEffect(() => {
     const apiname = api.get(`movie/${movieid}/credits`, {
       params: { api_key },
