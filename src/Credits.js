@@ -10,6 +10,7 @@ const Credits = () => {
     const apiname = api.get(`movie/${movieid}/credits`, {
       params: { api_key },
     });
+
     const data = async () => {
       const response = await apiname;
       setData(response.data.cast);
